@@ -7,18 +7,52 @@
 </div>
 
 
-<%= form_for :malts do |f| %>
+<%= form_for :malts, url: malts_path do |f| %>
   <p>
-    <%= f.label :title %><br>
-    <%= f.text_field :title %>
+    <%= f.label :description %><br>
+    <%= f.text_field :description %>
   </p>
  
   <p>
-    <%= f.label :text %><br>
-    <%= f.text_area :text %>
+    <%= f.label :quantity %><br>
+    <%= f.text_field :quantity %>
   </p>
  
   <p>
     <%= f.submit %>
   </p>
 <% end %>
+
+<%= form_for :hops, url: hops_path do |f| %>
+  <p>
+    <%= f.label :description %><br>
+    <%= f.text_field :description %>
+  </p>
+ 
+  <p>
+    <%= f.label :quantity %><br>
+    <%= f.text_field :quantity %>
+  </p>
+ 
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
+
+<%= form_for :yeasts, url: yeasts_path do |f| %>
+  <p>
+    <%= f.label :description %><br>
+    <%= f.text_field :description %>
+  </p>
+ 
+  <p>
+    <%= f.label :quantity %><br>
+    <%= f.text_field :quantity %>
+  </p>
+ 
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
+
+

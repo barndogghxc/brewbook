@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
+  
+resources :malts
 
+resources :hops
 
-resources :articles
-
-# resources :materials
+resources :yeasts
 
 # resources :brewhouse
 
@@ -13,15 +14,15 @@ resources :articles
 
 # resources :bar
 
-#   get 'brewbook/materials'
+  get 'brewbook/materials'
 
-#   get 'brewbook/brewhouse'
+  get 'brewbook/brewhouse'
 
-#   get 'brewbook/recipes'
+  get 'brewbook/recipes'
 
-#   get 'brewbook/cellar'
+  get 'brewbook/cellar'
 
-#   get 'brewbook/bar'
+  get 'brewbook/bar'
 
   root 'brewbook#index'
 end
